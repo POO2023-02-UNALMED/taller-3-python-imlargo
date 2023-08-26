@@ -8,6 +8,7 @@ class TV:
         self._precio = 500
         self._estado = estado
         self._volumen = 1
+        numTV+=1
     
 
 
