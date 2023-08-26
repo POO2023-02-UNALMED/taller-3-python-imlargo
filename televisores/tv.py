@@ -8,8 +8,7 @@ class TV:
         self._precio = 500
         self._estado = estado
         self._volumen = 1
-     
-        #self._control = control
+    
 
 
     def setMarca(self, marca):
@@ -52,11 +51,11 @@ class TV:
 
     #------------------------------
     @classmethod
-    def setNumTv(cls, num):
+    def setNumTV(cls, num):
         cls.numTV = num
 
     @classmethod
-    def getNumTv(cls):
+    def getNumTV(cls):
         return cls.numTV
     
     #------------------------------
