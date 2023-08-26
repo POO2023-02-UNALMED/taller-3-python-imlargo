@@ -16,7 +16,7 @@ class TV:
     
 
     def setCanal(self, canal):
-        if (self._volumen <= 120 and self._volumen >= 1 and self._estado == True):
+        if ((canal < 121 and canal > 0) and self.estado == True):
             self._canal = canal
     
 
@@ -25,7 +25,7 @@ class TV:
 
 
     def setVolumen(self, volumen):
-        if (self._volumen <= 7 and self._volumen >= 0 and self._estado == True):
+        if (volumen <= 7 and volumen >= 0 and self._estado == True):
             self._volumen = volumen
     
     def setControl(self, control):
