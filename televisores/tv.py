@@ -16,15 +16,17 @@ class TV:
     
 
     def setCanal(self, canal):
-        self._canal = canal
+        if (self._volumen <= 120 and self._volumen >= 1 and self._estado == True):
+            self._canal = canal
     
 
     def setPrecio(self, precio):
         self._precio = precio
-    
+
 
     def setVolumen(self, volumen):
-        self._volumen = volumen
+        if (self._volumen <= 7 and self._volumen >= 0 and self._estado == True):
+            self._volumen = volumen
     
     def setControl(self, control):
         self._control = control
@@ -76,22 +78,22 @@ class TV:
     #------------------------------
     #Canal
     def canalUp(self):
-        if (self._canal < 120 and self._estado):
+        if (self._canal < 120 and self._estado == True):
             self._canal += 1
         
     def canalDown(self):
-        if (self._canal > 1 and self._estado):
+        if (self._canal > 1 and self._estado == True):
             self._canal -= 1
     
 
     #Volumen
     def volumenUp(self):
-        if (self._volumen < 7 and self._estado):
+        if (self._volumen < 7 and self._estado == True):
             self._volumen += 1
             
 
     def volumenDown(self):
-        if (self._volumen > 0 and self._estado):
+        if (self._volumen > 0 and self._estado == True):
             self._volumen -= 1
     #------------------------------
 
